@@ -1,5 +1,7 @@
 package protocols;
 
+import java.util.Arrays;
+
 public class DispensaDisciplina extends Protocolo{
 	private String[] disciplinas;
 	private double valorPago;
@@ -16,8 +18,8 @@ public class DispensaDisciplina extends Protocolo{
 		this.setDescricao(descricao);
 	}
 	
-	public String[] getDisciplinas() {
-		return disciplinas;
+	public String getDisciplinas() {
+		return Arrays.toString(this.disciplinas);
 	}
 	public void setDisciplinas(String[] disciplinas) {
 		this.disciplinas = disciplinas;
